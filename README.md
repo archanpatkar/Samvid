@@ -17,6 +17,16 @@
 Hello World!
 ```
 
+#### Variables
+```scheme
+(begin (define r 10) (* pi (* r r)))
+```
+
+###### Output
+```scheme
+314.1592653589793
+```
+
 #### Functions
 ```scheme
 (define hello (lambda (msg) (print (+ (quote Hello,) msg))))
@@ -26,14 +36,4 @@ Hello World!
 ###### Output
 ```scheme
 Hello,Archan
-```
-
-#### Calculating Area of a Circle
-```scheme
-(begin (define r 10) (* pi (* r r)))
-```
-
-###### Output
-```scheme
-314.1592653589793
 ```
