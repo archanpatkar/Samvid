@@ -13,6 +13,8 @@ class Procedure:
 
 
 def eval(exp,env = globalenv):
+    if(exp is None):
+        return "null"
     if(isinstance(exp,Symbol)):
         return env.find(exp)[exp]
     elif(not isinstance(exp, List)):
@@ -34,16 +36,18 @@ def eval(exp,env = globalenv):
         env.find(symbol)[symbol] = eval(exp,env)
     elif(exp[0] == "lambda"):
         ( _ , params , *body ) = exp
-        return Procedure(params,body,env)
-    # elif(exp[0] == "block"):
-    #     outputs = []
-    #     for e in exp[1:]:
-    #         rev = eval(e,env)
-    #         if(rev != None):
-    #             outputs.append(rev)
-    #     return outputs
+        return Procedure(params,*body,env)
+    elif(exp[0] == "begin"):
+        for e in exp[1:-1]:
+            eval(e,env)
+        return eval(exp[-1],env)
     else:
-        print("Function Name:",exp[0])
         proc = eval(exp[0],env)
         args = [ eval(arg,env) for arg in exp[1:] ]
         return proc(*args)
+
+# def expand(exp):
+#     ( _ , v, body ) = exp[0], exp[1], exp[2:]
+#     if(_ == "define" and isinstance(v, list) and v): 
+#         f, args = v[0], v[1:]
+#         return [_ , f, ["lambda", args]+body]
