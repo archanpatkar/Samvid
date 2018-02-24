@@ -1,4 +1,4 @@
 # संविद् (Samvid) 
-###  A Scheme Compiler
+##### `संविद् (Samvid) means Scheme in Sanskrit`
 
-#### `संविद् (Samvid) means Scheme in Sanskrit`
+###  A Scheme Compiler
