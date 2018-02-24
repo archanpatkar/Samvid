@@ -4,17 +4,18 @@
 
 ### Examples
 
-
+#### Hello World! in संविद् 
 ###### Scheme
 ```scheme
-(begin (define r 10) (* pi (* r r)))
+(print (quote Hello World!))
 ```
 
 ###### Output
 ```scheme
-314.1592653589793
+Hello World!
 ```
 
+#### Strings in संविद् 
 ###### Scheme
 ```scheme
 (define hello (lambda (msg) (print (+ (quote Hello,) msg))))
@@ -24,4 +25,15 @@
 ###### Output
 ```scheme
 Hello,Archan
+```
+
+#### Calculating Area of a Circle in संविद् 
+###### Scheme
+```scheme
+(begin (define r 10) (* pi (* r r)))
+```
+
+###### Output
+```scheme
+314.1592653589793
 ```
