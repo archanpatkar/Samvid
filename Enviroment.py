@@ -1,5 +1,6 @@
 import math
 from Tokens import *
+from Entities import Env
 import operator as op
 
 def standard_env():
@@ -7,15 +8,15 @@ def standard_env():
     env.update(vars(math)) # sin, cos, sqrt, pi, ...
     env.update(
         {
-            '+':op.add, 
-            '-':op.sub, 
-            '*':op.mul, 
-            '/':op.truediv, 
-            '>':op.gt, 
-            '<':op.lt, 
-            '>=':op.ge, 
-            '<=':op.le, 
-            '=':op.eq, 
+            '+':       op.add, 
+            '-':       op.sub, 
+            '*':       op.mul, 
+            '/':       op.truediv, 
+            '>':       op.gt, 
+            '<':       op.lt, 
+            '>=':      op.ge, 
+            '<=':      op.le, 
+            '=':       op.eq, 
             'abs':     abs,
             'append':  op.add,  
             'apply':   lambda proc, args: proc(*args),
@@ -41,7 +42,7 @@ def standard_env():
             'symbol?': lambda x: isinstance(x, Symbol),
         }
     )
-    return env
+    return env      
 
 
 globalenv = standard_env()
