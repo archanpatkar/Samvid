@@ -8,7 +8,6 @@
 ### Examples
 
 #### Hello World!
-###### Scheme
 ```scheme
 (print (quote Hello World!))
 ```
@@ -19,7 +18,6 @@ Hello World!
 ```
 
 #### Functions
-###### Scheme
 ```scheme
 (define hello (lambda (msg) (print (+ (quote Hello,) msg))))
 (hello (quote Archan))
@@ -31,7 +29,6 @@ Hello,Archan
 ```
 
 #### Calculating Area of a Circle
-###### Scheme
 ```scheme
 (begin (define r 10) (* pi (* r r)))
 ```
