@@ -7,7 +7,7 @@
 
 ### Examples
 
-#### Hello World! in संविद् 
+#### Hello World!
 ###### Scheme
 ```scheme
 (print (quote Hello World!))
@@ -18,7 +18,7 @@
 Hello World!
 ```
 
-#### Strings in संविद् 
+#### Functions
 ###### Scheme
 ```scheme
 (define hello (lambda (msg) (print (+ (quote Hello,) msg))))
@@ -30,7 +30,7 @@ Hello World!
 Hello,Archan
 ```
 
-#### Calculating Area of a Circle in संविद् 
+#### Calculating Area of a Circle
 ###### Scheme
 ```scheme
 (begin (define r 10) (* pi (* r r)))
