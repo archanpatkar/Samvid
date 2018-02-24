@@ -1,7 +1,7 @@
 # संविद् 
 #### `संविद् (Samvid) means Scheme in Sanskrit`
-###  A Scheme Compiler
 <img src="./SamvidLogo.svg"/>
+<h3style="text-align:center;">A Scheme Compiler</h3>
 
 ### Examples
 
