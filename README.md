@@ -37,3 +37,5 @@ Hello World!
 ```scheme
 Hello,Archan
 ```
+
+Samvid is based on Peter Norvig's tutorial [(How to Write a (Lisp) Interpreter (in Python))](http://norvig.com/lispy.html)
