@@ -39,4 +39,4 @@ Hello,Archan
 ```
 
 ### Credits
-Peter Norvig's tutorial [(How to Write a (Lisp) Interpreter (in Python))](http://norvig.com/lispy.html)
+Peter Norvig's tutorial on [(How to Write a (Lisp) Interpreter (in Python))](http://norvig.com/lispy.html)
