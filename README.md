@@ -38,5 +38,4 @@ Hello World!
 Hello,Archan
 ```
 
-### Credits
-Peter Norvig's tutorial on [(How to Write a (Lisp) Interpreter (in Python))](http://norvig.com/lispy.html)
+Based on Peter Norvig's tutorial on [(How to Write a (Lisp) Interpreter (in Python))](http://norvig.com/lispy.html)
